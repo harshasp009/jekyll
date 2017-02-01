@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <!--<link rel="stylesheet" href="{{ site.baseurl }}/css/site.scss">-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+</head>
+<body>
+<header role = "banner" id = "header_nav">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src = "{{ site.baseurl }}/images/ramllogo.png" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">For Developers</a></li>
+                    <li><a href="#">For Enterprise</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">RAML MVPs</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+ {{ content }}
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="col-xs-4" >
+            <div class="logo">
+                <img src = "{{ site.baseurl }}/images/ramllogo.png" />
+            </div>
+
+            <div class="footer_description">
+                RAML is the only spec designed to encompass the full API lifecycle in a human readable format with code and design pattern reuse.  With RAML you can truly <a href="#">design</a>, <a href="#">build</a>, <a href="#">test</a>, <a href="#">document</a>, and <a href="#">share</a> your API all with one spec.
+            </div>
+        </div>
+
+        <div class="col-xs-4" >
+            <ul>
+                <li><a href="#">For Developers</a> </li>
+                <li><a href="#">For Enterprise</a> </li>
+                <li><a href="#">For Projects</a> </li>
+                <li><a href="#">Forums</a> </li>
+                <li><a href="#">Blog</a> </li>
+                <li><a href="#">About</a> </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

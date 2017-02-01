@@ -1,0 +1,45 @@
+name: Raml
+description: This is a RAML site.
+author: S P Sriharsha
+author_email: sp.sriharsha@redcrackle.com
+baseurl:
+url: ""
+permalink: pretty
+paginate_path: /page:num
+timezone:      null
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "page" # overrides previous default layout
+
+  -
+      scope:
+        path: ""
+      values:
+        layout: "default"
+
+# Where things are
+source:       .
+destination:  ./_site
+layouts_dir:  _layouts
+data_dir:     _data
+includes_dir: _includes
+sass:
+    sass_dir: _sass
+    style: compressed
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
