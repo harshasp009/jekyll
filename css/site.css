@@ -11,12 +11,12 @@ h2 {
 }
 
 #header_nav {
-    background-color: #1e2128;
     padding: 5px 0;
 }
-.navbar-inverse,#homepage_top {
-    background-color: #1e2128;
+.navbar-inverse{
+    background: transparent;
 }
+
 section#homepage_top {
   margin-top: -20px;
 }
@@ -133,7 +133,7 @@ a.raml-links {
     margin-left: 7px;
 }
 div.top_wrapper {
-    min-height: 565px;
+    max-height: 600px;
     height: 565px;
     background-color: #1e2128;
     background-image: url(../images/homepageherographic.svg);
@@ -238,6 +238,7 @@ div#map {
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
+    margin-top: 35px;
 }
 div.footer_description {
     font-size: 12px;
@@ -266,4 +267,156 @@ footer ul.footer_menu_nav li a {
     display: block;
     padding: 10px 15px;
 }
-
+div.project_cat {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+.page div.top_wrapper {
+    height: auto;
+    min-height: 0px;
+    background-color: #1e2128;
+    margin-bottom: 35px;
+}
+.page a.raml-links {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px 50px;
+    float: left;
+}
+#search {
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    background: url(../images/RAML_search_icon_01.svg) no-repeat left center;
+    background-size: 9%;
+    border: none;
+    border-bottom: 1px solid #66c4e8;
+    padding-left: 25px;
+}
+.filters {
+    margin-top: 30px;
+}
+section.project_category {
+    min-height: 120px;
+}
+.filters #categories .tag {
+    display: block;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: none;
+    background: none;
+    color: #404040;
+    padding-left: 0;
+    font-size: 14px;
+    font-family: arial;
+    padding: 3px 5px;
+    margin: 6px;
+}
+.filters #categories .tag:before {
+    content: "";
+    background: url(../images/RAML_checkmark_unchecked_01.svg) no-repeat center center;
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#projects .listing {
+    width: 100%;
+    border: 1px solid #d2d2d2;
+    padding: 28px;
+    margin: 15px 0;
+    display: inline-block;
+    background: #fff;
+}
+#projects .listing .first-col {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+#projects .listing .second-col {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+#projects .listing .third-col {
+    width: 25%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+#projects .listing .first-col h3 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+#projects .listing .first-col p {
+    color: #8a8a8a;
+    font-size: 14px;
+}
+#projects .listing .first-col p:nth-child(2) {
+    margin-bottom: 12px;
+}
+#projects .listing .second-col p {
+    color: #8a8a8a;
+    font-size: 12px;
+    line-height: 18px;
+}
+#projects .listing .third-col .button {
+    color: #66c4e8;
+    border: 1px solid #66c4e8;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    background-color: white;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    width: 120px;
+}
+.col-sm-9 .responses h2 + p {
+    float: right;
+    margin-top: 5px;
+}
+.col-sm-9 .responses h2 + p > a:first-child {
+    background-image: url(../images/projects_list_icon.svg);
+}
+.col-sm-9 .responses h2 + p > a {
+    display: inline-block;
+    width: 23px;
+    text-indent: -9999px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.col-sm-9 .responses h2 + p > a:last-child {
+    background-image: url(../images/projects_tile_icon_01.svg);
+}
+#projects_pages .selectedPage {
+    background: #66c4e8;
+    color: #fff;
+}
+#projects_pages a.page {
+    display: inline-block;
+    border: 1px solid #66c4e8;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.col-sm-9 .responses h2 {
+    font-size: 24px;
+    color: #515151;
+    margin-top: 0;
+    margin-right: 20px;
+    float: left;
+}

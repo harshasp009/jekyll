@@ -1,0 +1,90 @@
+---
+layout: page
+---
+
+<div class="row">
+    <aside class="col-sm-3 col-xs-3" role="complementary" >
+        <div class="well">
+            <section class="project_category">
+                <div class="raml-links-wrapper">
+                    <a href="/raml-10-spec" class="raml-links last">RAML 1.0</a><br />
+                    <a href="/raml-08-spec" class="raml-links first">RAML 0.8</a>
+                </div>
+            </section>
+
+            <section>
+                <h3>Recent Blog Post</h3>
+            </section>
+
+        </div>
+    </aside>
+
+    <section class="col-sm-9 col-xs-9">
+        <div class="wrapper">
+            <ul class="post-list">
+
+                {% for post in paginator.posts %}
+                <li>
+                    <h2>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                    {% assign author = site.data.authors[page.author] %}
+                    <!-- Output author details if some exist. -->
+                    {% if author %}
+                       <span>
+                           By <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+                       </span>
+                    {% endif %}
+
+                    <section class="post-excerpt" itemprop="description">
+                        <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+                    </section>
+                    <section class="post-meta">
+                        <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+                        <div class="post-categories">
+                            {% if post.categories.size > 0 %}in {% for cat in post.categories %}
+                            {% if site.jekyll-archives %}
+                            <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+                            {% else %}
+                            <a href="{{ site.baseurl }}/posts/#{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+                            {% endif %}
+                            {% endfor %}{% endif %}
+                        </div>
+                    </section>
+                </li>
+                {% if forloop.last == false %}
+                <hr>
+                {% endif %}
+                {% endfor %}
+            </ul>
+
+            {% if paginator.total_pages > 1 %}
+            <div class="pagination">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+                {% else %}
+                <span>&laquo; Prev</span>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <em>{{ page }}</em>
+                {% elsif page == 1 %}
+                <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                {% else %}
+                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                {% endif %}
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+                {% else %}
+                <span>Next &raquo;</span>
+                {% endif %}
+            </div>
+            {% endif %}
+
+        </div>
+    </section>
+
+</div>

@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+gem 'jekyll-paginate'
 ruby RUBY_VERSION
 
 # Hello! This is where you manage which Jekyll version is used to run.
