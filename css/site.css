@@ -420,3 +420,247 @@ section.project_category {
     margin-right: 20px;
     float: left;
 }
+
+section.raml_mvp  {
+ margin-top: 120px;
+}
+section.raml_mvp h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+section.raml_mvp p {
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #DDDDDD;
+}
+section.raml_mvp .btn-signup {
+    margin-top: 45px;
+}
+section.raml_mvp .btn-signup a {
+    color: #ffffff;
+    padding: 9px 50px;
+    background: #66c4e8;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 0;
+}
+div.bacground_banner {
+    background: url(../images/hero-image.svg) no-repeat;
+    background-size: 106%;
+    height: 500px;
+    background-position-y: -75px;
+}
+.mvp div.top_wrapper {
+    background-color: #282d36;
+}
+div.mid_content_signup, div.get_reward {
+    background: #F6F6F6;
+    min-height: 120px;
+}
+div.mid_content_signup p, div.get_reward p {
+    font-family: Arial,sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #777777;
+    margin-top: 25px;
+    text-align: center;
+}
+div.mid_content_signup .form-inline, div.get_reward .form-inline {
+    text-align: center;
+}
+div.mid_content_signup p.already_mem, div.get_reward p.already_mem {
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: #777777;
+    margin-bottom: 25px;
+}
+div.mid_content_signup img, div.get_reward img {
+    height: 18px;
+}
+div.mid_content_signup .form-control, div.get_reward .form-control {
+    font-family: Arial,sans-serif;
+    border: 1px solid #f6f6f6;
+    border-radius: 0;
+    width: 215px;
+}
+div.mid_content_signup .btn-default, div.get_reward .btn-default {
+    background: #68C3E3;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    width: 180px;
+    color: #feffff;
+    border-color: #68C3E3;
+}
+div.mid_content_how_works {
+    min-height: 150px;
+}
+div.mid_content_how_works center {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+div.mid_content_how_works h2 {
+    font-family: Arial,sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: #777777;
+}
+div.mid_content_how_works div.custom-img {
+    text-align: center;
+    margin-bottom: 50px;
+}
+div.mid_content_how_works div.caption {
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: #777777;
+    padding-top: 30px;
+}
+div.mid_content_how_works .col-md-1 {
+    margin-top: 20px;
+}
+div.our_mvps {
+    background-color: #282d36;
+    min-height: 300px;
+}
+div.our_mvps section {
+    margin-top: 60px;
+}
+div.our_mvps h2 {
+    font-family: Arial,sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+div.our_mvps div.challenge_content {
+    display: block;
+    background: #393d46;
+    padding: 27px;
+    min-height: 205px;
+    margin-top: 25px;
+    border-radius: 2px;
+}
+div.our_mvps div.challenge_content {
+    display: block;
+    background: #393d46;
+    padding: 27px;
+    min-height: 205px;
+    margin-top: 25px;
+    border-radius: 2px;
+}
+div.our_mvps div.sign_earning {
+    margin: 25px 0 25px 0;
+}
+
+div.our_mvps div.challenge_content span.ch_title {
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #AFAFAF;
+}
+div.our_mvps div.challenge_content span.ch_points {
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #31C600;
+    float: right;
+}
+div.our_mvps div.challenge_content h3 {
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+div.our_mvps div.challenge_content p {
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: #AFAFAF;
+}
+div.our_mvps div.challenge_content span.ch_do {
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #68C3E3;
+    float: right;
+}
+div.awesome_prize {
+    min-height: 350px;
+    background: #68C3E3;
+}
+div.awesome_prize h2 {
+    font-family: Arial,sans-serif;
+    font-size: 30px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+div.awesome_prize div.custom-img {
+    text-align: center;
+}
+div.awesome_prize p {
+    font-family: Arial,sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+div.awesome_prize center {
+    margin-top: 55px;
+}
+div.prize_sponsored {
+    min-height: 300px;
+}
+div.prize_sponsored h2 {
+    font-family: Arial,sans-serif;
+    font-size: 30px;
+    line-height: 25px;
+    color: #777777;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+div.prize_sponsored img:first-child, div.prize_sponsored img:last-child {
+    height: 70px;
+}
+div.prize_sponsored img {
+    height: 40px;
+    padding-right: 60px;
+}
+div.prize_sponsored center p {
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 70px;
+    color: #777777;
+    margin-bottom: 30px;
+}
+div.prize_sponsored span.prize_name {
+    padding-right: 156px;
+}
+.mvp .bottom-wrapper {
+    margin-top: 0;
+}
+div.get_reward {
+    padding: 35px 0;
+}
+div.our_mvps .table > tbody > tr > td {
+    border-top: 0;
+    color: #ffffff;
+    height: 60px;
+}
+div.our_mvps div.leaderboard_link {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+div.our_mvps div.leaderboard_link a {
+    text-decoration: none;
+    color: #66c4e8;
+}
+div.sign_earning a {
+    text-decoration: none;
+    color: #66c4e8;
+}

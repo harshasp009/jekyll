@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 gem 'jekyll-paginate'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
 ruby RUBY_VERSION
 
 # Hello! This is where you manage which Jekyll version is used to run.

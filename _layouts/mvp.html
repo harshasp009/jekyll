@@ -1,18 +1,16 @@
 <!doctype html>
 <html>
 <head>
-    <head>
-        {% seo %}
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
-        <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </head>
+    <meta charset="utf-8">
+    {% seo %}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body class="page">
+<body class="mvp">
 <div class="top_wrapper">
     <header role = "banner" id = "header_nav">
         <div class="container">
@@ -68,68 +66,27 @@
             </div>
         </nav>
     </header>
-</div>
-<div class="container">
-    <div class="row">
-        <aside class="col-sm-3 col-xs-3" role="complementary" >
-            <div class="well">
-                <section class="project_category">
-                    <div class="raml-links-wrapper">
-                        <a href="/raml-10-spec" class="raml-links last">RAML 1.0</a><br />
-                        <a href="/raml-08-spec" class="raml-links first">RAML 0.8</a>
-                    </div>
-                </section>
-
-                <section>
-                    <h3>Recent Blog Post</h3>
-                </section>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <section class="raml_mvp">
+                  <h2>RAML MVPs</h2>
+                  <p>Do you Love RAML ? want to connect with other RAMLers While growing your skills and earning awesome prizes ? Then the RAML MVPs program is for you.</p>
+                  <div class="btn-signup"><a href="https://raml.influitive.com/users/sign_in" class="link_signup">Sign up</a></div>
+              </section>
             </div>
-        </aside>
-
-        <section class="col-sm-9 col-xs-9">
-            <div class="wrapper">
-                <h2>
-                    {{ page.title }}
-                </h2>
-                {% assign author = site.data.authors[page.author] %}
-                {% if author %}
-                  <span>
-                      By <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
-                  </span>
-                {% endif %}
-                {{ content }}
+            <div class = "col-md-8">
+                <div class="bacground_banner">
+                </div>
             </div>
-            <div class="comment">
-                {% if page.comments %}
-                <div id="disqus_thread"></div>
-                <script>
-
-                    /**
-                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                    /*
-                     var disqus_config = function () {
-                     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                     };
-                     */
-                    (function() { // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        s.src = '//redcrackle.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-                {% endif %}
-                <script id="dsq-count-scr" src="//redcrackle.disqus.com/count.js" async></script>
-            </div>
-        </section>
+        </div>
     </div>
 </div>
 
+
+<div class="index-content">
+    {{ content }}
+</div>
 <div class="bottom-wrapper">
     <footer class="footer container">
         <div class="container">
@@ -168,6 +125,7 @@
         </div>
     </footer>
 </div>
+
 
 </body>
 </html>
